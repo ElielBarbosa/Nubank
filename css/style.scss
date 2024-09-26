@@ -42,3 +42,9 @@ svg, img{
 @import './partials/footer';
 @import './partials/animations';
 
+.icon{
+    width: 60px;
+    &:hover{
+        background-color: purple;
+    }
+}

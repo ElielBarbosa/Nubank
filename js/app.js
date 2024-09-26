@@ -62,5 +62,18 @@ const showMenu = (toggleId, navId) => {
         });
     };
 };
+showMenu('bx', 'menu-mobile');
 
-showMenu('bx', 'menu-mobile')
+//ESSE CÓDIGO PERMITE FECHAR O MENU MOBILE CASO A A TELA MUDE DE TAMANHO E PASSE PARA O MODO DESKTOP
+
+let menuMobile = document.querySelector('.menu-mobile');
+
+menuMobile.addEventListener('click', (event) => {
+    let bx = document.querySelector('.bx');
+    event.target.classList.toggle('active-menu-mobile');
+    bx.classList.toggle('active-bx');
+})
+
+
+
+let a = document.getE

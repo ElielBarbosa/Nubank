@@ -30,9 +30,6 @@ header {
 .logo {
     width: 48px;
     height: 48px;
-    background-color: red;
-    justify-content: center;
-    align-items: center;
     z-index: 800;
 }
 
@@ -319,4 +316,10 @@ header {
         }
     }
     
+}
+
+.socialMedia{
+    display: flex;
+    gap: 32px;
+    width: 100%;
 }
