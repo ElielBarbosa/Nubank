@@ -187,6 +187,7 @@ header {
 .bx {
     width: 36px;
     height: 36px;
+    transition: .7s ease;
 
     position: relative;
     cursor: pointer;
@@ -199,7 +200,7 @@ header {
         position: absolute;
         top: 40%;
         left: 17%;
-
+        transition: .7s ease;
 
         width: 70%;
         height: 2px;
@@ -211,6 +212,7 @@ header {
         position: absolute;
         top: 64%;
         left: 17%;
+        transition: .7s ease;
 
 
         width: 70%;
@@ -286,6 +288,8 @@ header {
 
     display: flex;
     flex-direction: column;
+
+    
 }
 .nav-link-mobile{
     display: inline-block;
@@ -296,6 +300,19 @@ header {
 
     position: relative;
 
+    svg{
+        width: 36px;
+        height: 36px;
+        path{
+            stroke: $gray-7;
+        }
+
+        &:hover{
+            stroke: $primary-normal;
+            transition: .7s ease;
+        }
+    }
+    
     &::after{
         content: '';
         position: absolute;
@@ -316,10 +333,4 @@ header {
         }
     }
     
-}
-
-.socialMedia{
-    display: flex;
-    gap: 32px;
-    width: 100%;
 }
