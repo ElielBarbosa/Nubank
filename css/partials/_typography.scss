@@ -89,7 +89,7 @@ h1 {
     color: $black-normal;
     @include typeface-1(h1, desktop);
     @include responsive(s) {
-      @include typeface-1(h1, mobile);
+    @include typeface-1(h1, mobile);
     }
   }
   
@@ -97,7 +97,7 @@ h1 {
     color: $black-normal;
     @include typeface-1(h2, desktop);
     @include responsive(s) {
-      @include typeface-1(h2, mobile);
+    @include typeface-1(h2, mobile);
     }
   }
   
@@ -105,7 +105,7 @@ h1 {
     color: $black-normal;
     @include typeface-1(h3, desktop);
     @include responsive(s) {
-      @include typeface-1(h3, mobile);
+    @include typeface-1(h3, mobile);
     }
   }
   
@@ -113,7 +113,7 @@ h1 {
     color: $black-normal;
     @include typeface-1(h4, desktop);
     @include responsive(s) {
-      @include typeface-1(h4, mobile);
+    @include typeface-1(h4, mobile);
     }
   }
   
@@ -127,7 +127,7 @@ h1 {
   
     @include typeface-1(h5, desktop);
     @include responsive(s) {
-      @include typeface-1(h5, mobile);
+    @include typeface-1(h5, mobile);
     }
   }
   
@@ -135,7 +135,7 @@ h1 {
     color: $gray-4;
     @include typeface-2(p2, desktop);
     @include responsive(s) {
-      @include typeface-2(p2, mobile);
+    @include typeface-2(p2, mobile);
     }
   }
   
@@ -148,7 +148,7 @@ h1 {
     color: $black-normal;
     @include typeface-2(p2, desktop);
     @include responsive(s) {
-      @include typeface-2(p2, mobile);
+    @include typeface-2(p2, mobile);
     }
   }
   

@@ -15,7 +15,48 @@ a{
     transition: .3s ease;
     color: $white-light;
     &:hover{
-        transform: scale(0.9);
+        transform: scale(1.05);
         box-shadow: 0px 2.309687852859497px 3.623039960861206px rgba(173, 77, 202, 0.521); border-radius: 16px;
+    }
+}
+.link{
+    display: inline-block;
+    color: $primary-normal;
+
+    background-image: url('../svg/icon-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+
+    padding: 16px 16px 16px 48px;
+    position: relative;
+
+    font-size: 18px;
+
+    &::after{
+        content:'';
+        display: block;
+        position: absolute;
+
+        top: 75%;
+        left: 56px;
+
+        
+        width: 0%;
+        height: 2px;
+        border-radius: 2px;
+        transition: .5s ease;
+        background-color: $secondary-light;
+    }
+    &:hover{
+        opacity: 0.8;
+        padding-left: 64px;
+        background-position: 8px 50%;
+        transition: .5s ease;
+        
+        &::after{
+            
+            width: 100%;
+            background-color: $secondary-light;
+        }
     }
 }

@@ -22,14 +22,17 @@
 <body>
     <!------------ HEADER ------------>
     <header id="header">
+
         <!------------ NAVBAR MOBILE ------------>
-        <nav class="navbar-mobile">
-            <div class="bx" id="bx"></div>
-            <a href="">
-                <img class="logo" src="./svg/logonu.svg" alt="" onload="SVGInject(this)">
-            </a>
-            <a href="" style="z-index: 800;">Login</a>
-        </nav>
+        <div>
+            <nav class="navbar-mobile">
+                <div class="bx" id="bx"></div>
+                <a href="">
+                    <img class="logo" src="./svg/logonu.svg" alt="" onload="SVGInject(this)">
+                </a>
+                <a href="" style="z-index: 800;">Login</a>
+            </nav>
+     </div>
         <!----------- NAVBAR DESKTOP ------------>
         <nav class="navbar-desktop">
             <div class="navbar-desktop-item-1">
@@ -114,7 +117,45 @@
             <div class="card"></div>
         </div>
     </main>
-    <!----------- COmentário ------------>
+    <!----------- SECTION PEOPLE ------------>
+
+    <section class="container">
+        <div class="flex-item-4 flex-column">
+            <h5>Para todos</h5>
+            <h2>Completo</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pellentesque vulputate at mattis nibh nulla est. Pharetra, eget purus tortor nibh porta ipsum enim urna viverra.
+            </p>
+            <ul class="list mt-3">
+                <li class="list-item bg-icon-check">
+                    <strong>100% gratuito</strong>
+                    <p>Isso mesmo, voce nao paga nada para abrir sua conta</p>
+                </li>
+                <li class="list-item bg-icon-check">
+                    <strong>Sem taxas ou cobrancas</strong>
+                    <p>Isso mesmo, voce nao paga nada para abrir sua conta</p>
+                </li>
+                <li class="list-item bg-icon-check">
+                    <strong>O melhor suporte de todos</strong>
+                    <p>Isso mesmo, voce nao paga nada para abrir sua conta</p>
+                </li>
+            </ul>
+            <p>
+                <a href="" class="link">Confira os beneficios</a>
+            </p>
+        </div>
+        <div class="flex-item-3 mx-2">
+            <img src="./svg/svg-people1.svg" onload="SVGInject(this)" />
+        </div>
+        <div class="flex-item-1 flex-column mx-2 my-3">
+            <img src="./svg/svg-people2.svg" class="mx-2 my-2"  id="people2" onload="SVGInject(this)" />
+            <img src="./svg/svg-people3.svg" class="mx-2 my-2" onload="SVGInject(this)" />
+        </div>
+    </section>
+    <!-----------  ------------>
+    <!-----------  ------------>
+    <!-----------  ------------>
+    <!-----------  ------------>
 
     <!----------- JS ------------>
 
