@@ -138,6 +138,48 @@
   height: 64px;
 }
 
+.best {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50px;
+  background-color: #F7F2FA;
+}
+@media screen and (max-width: 960px) {
+  .best {
+    flex-direction: column;
+  }
+}
+.best::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 124px;
+  height: 32px;
+  background-image: url("../svg/entail.svg");
+  background-repeat: no-repeat;
+}
+
+.best-item {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  align-items: flex-start;
+  margin: 5px;
+  padding: 16px;
+  margin: 8px 0px;
+}
+@media screen and (max-width: 960px) {
+  .best-item {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 h1 {
   color: #232224;
   font-family: "Sora", sans-serif;
@@ -948,9 +990,24 @@ header {
   cursor: pointer;
 }
 
+.icon {
+  filter: drop-shadow(0px 16px 26px rgba(128, 0, 128, 0.253));
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.icon:hover {
+  transform: scale(1.05s);
+}
+
 .div-card {
   perspective: 500px;
   position: relative;
+  margin: 72px 0px;
+}
+@media screen and (max-width: 960px) {
+  .div-card {
+    width: 90%;
+  }
 }
 
 .card {
@@ -1005,29 +1062,29 @@ header {
 
 .icon-contactless-hero {
   position: absolute;
-  top: 300px;
-  left: 420px;
+  top: 290px;
+  left: 520px;
   z-index: 200;
   animation: icons-hero 7s ease 1s infinite alternate;
 }
 @media screen and (max-width: 960px) {
   .icon-contactless-hero {
-    top: 320px;
-    left: 180px;
+    top: 280px;
+    left: 280px;
   }
 }
 
 .icon-mobile-hero {
   position: absolute;
   top: 150px;
-  left: 120px;
+  left: 130px;
   z-index: 200;
   animation: icons-hero 7s ease 2.5s infinite alternate;
 }
 @media screen and (max-width: 960px) {
   .icon-mobile-hero {
-    top: 150px;
-    left: -80px;
+    top: 100px;
+    left: -20px;
   }
 }
 
