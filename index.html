@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <script src="js/svginject.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Nubank</title>
 </head>
 
@@ -180,13 +181,116 @@
             </div>
         </div>
     </section>
-    <!-----------  ------------>
+    <!----------- SECTION SLIDE COM SWIPER JS ------------>
+    <section class="box">
+        <h5>Depoimentos</h5>
+        <h2>Todos amam o roxinho</h2>
+    </section>
+    <section class="container-swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-1"></div>
+                    <h4 class="my-1">Jorge Silva</h4>
+                    <p class="my-1">
+                        Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. 
+                        Officia delectus similique nobis 
+                        laudantium repellendus nostrum, 
+                        suscipit doloremque voluptatem iste 
+                        recusandae commodi, aut doloribus 
+                        molestiae ea reprehenderit 
+                        obcaecati error enim assumenda?
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-2"></div>
+                    <h4 class="my-1">Jorge Silva</h4>
+                    <p class="my-1">
+                        Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. 
+                        Officia delectus similique nobis 
+                        laudantium repellendus nostrum, 
+                        suscipit doloremque voluptatem iste 
+                        recusandae commodi, aut doloribus 
+                        molestiae ea reprehenderit 
+                        obcaecati error enim assumenda?
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-3"></div>
+                    <h4 class="my-1">Jorge Silva</h4>
+                    <p class="my-1">
+                        Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. 
+                        Officia delectus similique nobis 
+                        laudantium repellendus nostrum, 
+                        suscipit doloremque voluptatem iste 
+                        recusandae commodi, aut doloribus 
+                        molestiae ea reprehenderit 
+                        obcaecati error enim assumenda?
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-4"></div>
+                    <h4 class="my-1">Jorge Silva</h4>
+                    <p class="my-1">
+                        Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. 
+                        Officia delectus similique nobis 
+                        laudantium repellendus nostrum, 
+                        suscipit doloremque voluptatem iste 
+                        recusandae commodi, aut doloribus 
+                        molestiae ea reprehenderit 
+                        obcaecati error enim assumenda?
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-5"></div>
+                    <h4 class="my-1">Jorge Silva</h4>
+                    <p class="my-1">
+                        Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. 
+                        Officia delectus similique nobis 
+                        laudantium repellendus nostrum, 
+                        suscipit doloremque voluptatem iste 
+                        recusandae commodi, aut doloribus 
+                        molestiae ea reprehenderit 
+                        obcaecati error enim assumenda?
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="button-next"></div>
+        <div class="button-prev"></div>
+    </section>
+    
+
     <!-----------  ------------>
     <!-----------  ------------>
 
     <!----------- JS ------------>
 
     <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+           slidesPerView: 'auto',
+           spaceBeteween: 40,
+           grabCursor: true,
+           pagination:{
+            el: 'swiper-pagination',
+            clickable: true,
+            type: 'progresssbar',
+           },
+           navigation:{
+            nexEl: '.button-next',
+            prevEl: 'button-prev'
+           }
+        });
+    </script>
 </body>
 
 </html>
