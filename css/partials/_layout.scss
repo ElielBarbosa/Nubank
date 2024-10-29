@@ -159,14 +159,15 @@ $gutter: 24px;
 .list-item{
     list-style: none;
     position: relative;
+    line-height: 50%;
 
-
-    padding: 8px 8px 8px 72px;
+    padding: 8px 8px 8px 88px;
     margin-bottom: 48px;
+    margin-left: 16px;
     &::after{
         content: '';
         position: absolute;
-        top: 0;
+        top: 8px;
         left: 8px;
         
         display: block;
